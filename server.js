@@ -216,7 +216,7 @@ app.post("/api/initiate_payment", async (req, res) => {
     const salt_key = "3PCUOFDD7P";
     const txnid = paymentData.txnid;
     const username = "Organics";
-    const email = "myofai@gmail.com";
+    const email = paymentData.email;
     const amountTotal = paymentData.amount;
     const productinfo = paymentData.productinfo;
     const generateHash = () => {
